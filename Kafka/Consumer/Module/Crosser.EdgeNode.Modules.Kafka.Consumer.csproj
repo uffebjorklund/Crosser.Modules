@@ -6,6 +6,6 @@
 
   <ItemGroup>
     <PackageReference Include="Crosser.EdgeNode.Flows" Version="2.0.7" />
+    <PackageReference Include="Confluent.Kafka" Version="1.5.3" />
   </ItemGroup>
-
 </Project>
