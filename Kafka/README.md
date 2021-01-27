@@ -1,6 +1,6 @@
 # Kafka Modules for Crosser Edge
 
-To run the unit tests you have to setup kafka locally
+To run the unit tests you have to setup kafka locally or you can create a free kafkacluster at https://customer.cloudkarafka.com/instance/create?plan=ducky
 
 PreReq: docker and docker-compose are installed
 

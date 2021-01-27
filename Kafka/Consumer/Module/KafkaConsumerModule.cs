@@ -14,5 +14,24 @@
         {
             throw new NotImplementedException();
         }
+
+        // private void SetSecurity()
+        // {
+        //     if (this.Settings.OpcCredentials.HasValue && this.Settings.Credentials.ContainsKey(this.Settings.OpcCredentials.Value))
+        //     {
+        //         var credentials = this.Settings.Credentials[this.Settings.OpcCredentials.Value];
+        //         switch (credentials.CredentialType)
+        //         {
+        //             case Credential.Types.UsernameAndPassword:
+        //                 var usernamePasswordCredential = credentials.ToCredential<CredentialWithUsernamePassword>();
+        //                 this.LoadUser(usernamePasswordCredential.Username, usernamePasswordCredential.Password);
+        //                 break;
+        //             case Credential.Types.Certificate:
+        //                 var certificateCredential = credentials.ToCredential<CredentialWithCertificate>();
+        //                 this.LoadCertificate(certificateCredential.X509Certificate2);
+        //                 break;
+        //         }
+        //     }
+        // }
     }
 }
