@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option csharp_namespace = "Crosser.Ipc";
+
+package crosser.ipc;
+
+/*HTTP Subscription*/
+service HttpModuleMessages {
+  rpc HttpResponse(HttpResponseMessage) returns (OperationResponse);
+}
+
+message OperationResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message HttpResponseMessage{
+  string requestId = 1;
+  bytes data = 2;
+}
