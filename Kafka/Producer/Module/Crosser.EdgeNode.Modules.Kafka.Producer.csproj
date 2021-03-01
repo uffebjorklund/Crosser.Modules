@@ -1,13 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net5.0;netstandard2.1</TargetFrameworks>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Version>1.0.0-preview009</Version>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Confluent.Kafka" Version="1.5.3" />
     <PackageReference Include="Crosser.EdgeNode.Flows" Version="2.0.7" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="docs\**\*">
+      <Pack>true</Pack>
+      <PackagePath>docs\</PackagePath>
+    </Content>
+  </ItemGroup>
 </Project>
